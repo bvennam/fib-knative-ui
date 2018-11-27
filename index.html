@@ -1,0 +1,33 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Knative Fibonacci</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="skeleton.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+    </head>
+    <body class="code-snippets-visible has-docked-nav"">
+      <div class="container">
+          <h3 class="capsheader"> Knative Fibonacci </h3>
+          <p>The UI for this application is hosted using IBM Cloud Object Storage, and served through IBM Cloud's CDN service.
+            The backend for this application is built and served using the Knative build & serving components installed on IBM Kubernetes Service.
+          When not in use, the backend will scale back down to 0.</p>
+          <form>
+            <label> Enter a number: </label>
+            <input id="number" value = "10">
+          </form>
+          <button class="button-primary" onclick=submitNumber()>Get Sequence</button>
+          <div id = "response"> </div>
+      </div>
+    </body>
+    <script src="index.js"></script>
+</html>
